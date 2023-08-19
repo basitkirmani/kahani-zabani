@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Setting for count after interstial ad needs to be displayed-->
+    <integer name="adCount">2</integer>
+</resources>

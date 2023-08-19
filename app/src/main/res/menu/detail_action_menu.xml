@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_fav"
+        android:checkable="true"
+        android:icon="@drawable/ic_favorite_border_black_24dp"
+        android:title="Favorites"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_bookmark"
+        android:checkable="true"
+        android:icon="@drawable/ic_bookmark_outline"
+        android:title="Favorites"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_send"
+        android:icon="@drawable/ic_share_content"
+        android:title="Send"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_text_size"
+        android:icon="@drawable/ic_format_size_black_24dp"
+        android:title="Font Size"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_night_mode"
+        android:icon="@drawable/ic_brightness_3_black_24dp"
+        android:title="Night Mode"
+        android:visible="false"
+        app:showAsAction="always" />
+
+</menu>

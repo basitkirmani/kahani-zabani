@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_name">com.stories.storyapp.SharedPrefs</string>
+    <string name="font_pref">fontSize</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="theme_pref">theme</string>
+</resources>

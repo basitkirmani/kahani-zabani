@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/settings_label"
+                android:layout_marginTop="15dp"
+                android:text="Themes" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/color_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/axiforma_bold"
+                    android:text="Night Mode"
+                    android:textColor="@color/night_mode"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/axiforma_regular"
+                    android:text="For better readability at night"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/night_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/axiforma_bold"
+                android:text="Font Size"
+                android:textColor="@color/night_mode"
+                android:textSize="16sp" />
+
+            <SeekBar
+                android:id="@+id/font_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:max="36" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/axiforma_regular"
+                android:gravity="center"
+                android:text="Preview"
+                android:textColor="@color/light_gray"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle">
+
+                <TextView
+                    android:id="@+id/sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/axiforma_regular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/light_gray"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--        <TextView-->
+        <!--            style="@style/settings_label"-->
+        <!--            android:text="Themes" />-->
+
+        <!--        <androidx.recyclerview.widget.RecyclerView-->
+        <!--            android:id="@+id/color_grid"-->
+        <!--            android:overScrollMode="never"-->
+        <!--            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"-->
+        <!--            app:spanCount="6" />-->
+
+        <TableRow>
+
+            <!--            <TextView-->
+            <!--                style="@style/settings_label"-->
+            <!--                android:layout_gravity="center_vertical"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:text="Night Mode" />-->
+
+            <!--            <androidx.appcompat.widget.SwitchCompat-->
+            <!--                android:id="@+id/night_switch"-->
+            <!--                android:layout_margin="10dp" />-->
+
+        </TableRow>
+
+        <!--        <TextView-->
+        <!--            style="@style/settings_label"-->
+        <!--            android:text="Font Size" />-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="#e1e1e1"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/sample"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="65dp"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:padding="5dp"-->
+                <!--                    android:text="@string/app_name"-->
+                <!--                    android:textColor="#000"-->
+                <!--                    android:textSize="12sp" />-->
+
+                <!--                <SeekBar-->
+                <!--                    android:id="@+id/font_bar"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="10dp"-->
+                <!--                    android:layout_marginEnd="10dp"-->
+                <!--                    android:layout_marginBottom="10dp"-->
+                <!--                    android:max="36" />-->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </TableLayout>
+
+</LinearLayout>

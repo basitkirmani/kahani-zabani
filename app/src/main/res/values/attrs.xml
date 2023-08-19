@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SmartTextView">
+        <attr name="justified" format="boolean"/>
+        <attr name="android:textAllCaps"/>
+        <attr name="android:textStyle"/>
+        <attr name="fontF" format="enum">
+            <enum name="thin" value="0"/>
+            <enum name="reg" value="1"/>
+            <enum name="thick" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>
